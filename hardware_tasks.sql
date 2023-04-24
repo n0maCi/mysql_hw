@@ -30,7 +30,7 @@ LIMIT 1
 ;
 -- 8. 
 INSERT INTO `hardware` (`title`, `price`, `amount`, `tag`) 
-VALUE ('Ноутбук Lenovo 2BXKQ7E9XD', '54500', '1', 'new')
+VALUES ('Ноутбук Lenovo 2BXKQ7E9XD', '54500', '1', 'new')
 ;
 -- 9.
 DELETE FROM hardware
