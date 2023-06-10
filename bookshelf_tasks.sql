@@ -15,14 +15,14 @@ LIMIT 5
 -- 3. 
 SELECT COUNT(shelves.title) as 'Количество книг' FROM shelves
 JOIN books ON shelves.id = books.shelves_id
-WHERE shelves.title LIKE '%кабин%'
+WHERE shelves.title = 'Полка в кабинете'
 ;
 -- 4. 
 SELECT books.title as 'Название', authors.name as 'Автор', books.year as 'Год', shelves.title 'Полка' FROM shelves
 JOIN books ON shelves.id = books.shelves_id
 JOIN authors_books ON books.id = authors_books.books_id
 JOIN authors ON authors_books.authors_id = authors.id
-WHERE shelves.title LIKE '%спал%'
+WHERE shelves.title = 'Полка в спальне'
 ;
 -- 5. 
 SELECT books.title as 'Книга', books.year 'Год', authors.name as 'Автор' FROM books
